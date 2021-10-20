@@ -46,15 +46,45 @@ h2 {
   line-height: 1.1;
 }
 
-/* Make it a marquee */
-.marquee {
+/* IMAGE MARQUEE -----------------------*/
+.tech-slideshow {
+  height: 25px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 25px;
+  width: 4000px;
+  background: url(https://raw.githubusercontent.com/lneoa/SMS/e92cf43398b6b81f47933642f2f620f5f36bf51d/img/sms%20logo%20green.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 12s linear infinite;
+}
+
+@keyframes moveSlideshow {
+  0% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
+
+/* Make it a marquee -----------------------*/
+/* .marquee { */
   margin: 0 auto;
   white-space: nowrap;
   overflow: visible;
   background-color: white;
 }
 
-.marquee span {
+/* .marquee span { */
   display: inline-block;
   padding-left: 0%;
   animation: marquee 45s linear infinite;
@@ -63,7 +93,7 @@ h2 {
   color: limegreen;
 }
 
-/* Make it move */
+/* Make it move -----------------------*/
 @keyframes marquee {
   0%   { transform: translate(0, 0); }
   100% { transform: translate(-100%, 0); }
