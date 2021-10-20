@@ -1,0 +1,124 @@
+
+/* hover effect */
+.hover_img a { 
+  position:relative; 
+}
+
+.hover_img a span { 
+  position:sticky;
+  display:none;
+  z-index: index 50;
+  
+}
+
+.hover_img a:hover span { 
+  display:block; 
+}
+/* hover effect */
+
+a{
+  font-size: 2.5em;
+  text-decoration:none;
+  color: black;
+  cursor: default;
+}
+
+body {
+  font-family: 'News Cycle', sans-serif;
+}
+
+h1 {
+  color:limegreen;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/* Make it a marquee */
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 0%;
+  animation: marquee 45s linear infinite;
+  font-size: 2em;
+  font-weight:700;
+}
+
+/* Make it move */
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+
+.container {
+	margin: 0px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  width: 100vw;
+  height: 100vh;
+	/* avoid browser level touch actions */
+	xtouch-action: none; 
+}
+
+.left {
+  width: 25vw;
+  padding-left: 10px;
+  /* border-left: 1px solid black; */
+}
+
+.right {
+  width: 75vw;
+  padding-left: 10px;
+  background-color: limegreen;
+  overflow-y: scroll; 
+}
+
+.left home, 
+.right home{
+  overflow-y: scroll; 
+  overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+  height: 100vh;
+}
+
+
+
+
+/* Mobile
+-------------------------------------------------- */
+
+@media screen and (max-width: 650px) {
+  html,
+  body, 
+  p,
+  .h1 {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .row {
+    grid-template-columns: 26px auto;
+  }
+  
+} 
+
