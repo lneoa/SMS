@@ -54,13 +54,13 @@ h2 {
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  background-color: limegreen;
+  background-color: black;
 }
 
 .tech-slideshow > div {
   height: 25px;
   width: 4000px;
-  background: url(https://raw.githubusercontent.com/lneoa/SMS/9d9745c22e5c611cb93aff1f7e27d4db46d8dad4/img/sms%20logo%20green%20pad-01.svg);
+  background: url(https://raw.githubusercontent.com/lneoa/SMS/f2c5fd943173d58bec9658627bcb37f5bc1c7344/img/sms%20logo%20green%20pad-01.svg);
   position: absolute;
   top: 0;
   left: 0;
