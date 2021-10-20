@@ -33,17 +33,18 @@ a{
 }
 
 h1 {
-  color:limegreen;
-  font-size: 1em;
+  font-size: 3em;
   font-weight: 700;
   text-align: left;
   line-height: 1.1;
+  color:limegreen;
 }
 
 h2 {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.1;
+  color:black;
 }
 
 /* IMAGE MARQUEE -----------------------*/
@@ -53,7 +54,7 @@ h2 {
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  background-color: white;
+  background-color: limegreen;
 }
 
 .tech-slideshow > div {
