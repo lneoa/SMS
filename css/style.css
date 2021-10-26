@@ -17,6 +17,7 @@ body {
   position:sticky;
   display:none;
   z-index: index 50;
+  transform: rotate(90deg);
 }
 
 .hover_img a:hover span { 
@@ -51,13 +52,13 @@ h2 {
   color:black;
 }
 
-h4{
+h4 {
   font-size: 1.2em;
   font-weight: 400;
   line-height: 0.8;
   margin-top: -10px;
   margin-bottom: 0px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /* IMAGE MARQUEE -----------------------*/
