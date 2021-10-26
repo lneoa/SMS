@@ -17,7 +17,6 @@ body {
   position:sticky;
   display:none;
   z-index: index 50;
-  transform: rotate(90deg);
 }
 
 .hover_img a:hover span { 
